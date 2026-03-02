@@ -30,7 +30,7 @@ public class PredictController {
     @Autowired
     private PredictServices predictServices;
 
-    @GetMapping("/history")
+    @GetMapping("/v1/history")
     public List<Input> getHistory() {
         return predictServices.getAllData();
     }
@@ -98,7 +98,7 @@ public class PredictController {
 
 
 
-    @PostMapping(value = "/predict", consumes = {"multipart/form-data"})
+    @PostMapping(value = ""/v1/predict", consumes = {"multipart/form-data"})
     public ResponseEntity<ClassificationResponse> predict(
             @RequestParam("file") MultipartFile file,
             @RequestParam("name") String name,
