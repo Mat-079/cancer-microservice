@@ -1,6 +1,6 @@
 This project implements a cancer image classification system using a Microservices Architecture approach.
 
-The system separates frontend, backend processing, and AI classification services to improve scalability, modularity, and maintainability.
+The system separates frontend, backend processing, and AI classification services to improve modularity, and maintainability.
 
 Architecture consists of:
 
